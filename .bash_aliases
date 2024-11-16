@@ -100,7 +100,6 @@ function svenv() {
 
 function mktmp() {
   __TMPDIR="$(mktemp -d)"
-  echo $__TMPDIR
   cd "$__TMPDIR"
 }
 

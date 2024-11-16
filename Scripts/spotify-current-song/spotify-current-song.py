@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 import tekore as tk
 from time import sleep
+from os.path import expanduser
 
-CFG_PATH = '/home/sadmantariq/.config/tekore.cfg'
-OUTPUT = "/home/sadmantariq/repos/dotfiles/Scripts/spotify-current-song/output"
+CFG_PATH = expanduser('~/.config/tekore.cfg')
+OUTPUT = expanduser("~/repos/dotfiles/Scripts/spotify-current-song/output")
 MAX_STRING_LENGTH = 60
 REFRESH_INTERVAL = 2
 

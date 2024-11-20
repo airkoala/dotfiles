@@ -43,7 +43,10 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 -- Set scroll offset
-vim.o.scrolloff=2
+vim.o.scrolloff = 2
+
+vim.o.softtabstop = 4
+vim.o.expandtab = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -214,8 +217,7 @@ local servers = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
-      -- NOTE: toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-      -- diagnostics = { disable = { 'missing-fields' } },
+      diagnostics = { disable = { 'missing-fields' } },
     },
   },
 }

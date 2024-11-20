@@ -42,6 +42,9 @@ vim.o.hlsearch = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+-- Set scroll offset
+vim.o.scrolloff=2
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 

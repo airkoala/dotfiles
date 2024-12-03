@@ -34,4 +34,11 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = {},
   },
+
+  {
+    'norcalli/nvim-colorizer.lua',
+    init = function()
+      require('colorizer').setup()
+    end,
+  }
 }

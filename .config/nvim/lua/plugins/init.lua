@@ -37,5 +37,12 @@ return {
     init = function()
       require('colorizer').setup()
     end,
-  }
+  },
+
+  {
+    'Goose97/timber.nvim',
+    version = "*",
+    event = "VeryLazy",
+    opts = {},
+  },
 }

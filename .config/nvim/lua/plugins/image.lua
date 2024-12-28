@@ -1,11 +1,8 @@
 if vim.env.TERMINAL == 'kitty' then
-    return {
-        "3rd/image.nvim",
-        dependencies = { "luarocks.nvim" },
-        config = function()
-            require("image").setup()
-        end
-    }
+  return {
+    "3rd/image.nvim",
+    opts = {},
+  }
 else
-    return {}
+  return {}
 end

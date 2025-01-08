@@ -5,7 +5,10 @@ return {
     require("gruvbox").setup({
       contrast = "hard",
       transparent_mode = false,
-    })
-    vim.cmd.colorscheme('gruvbox')
+      overrides = {
+        SignColumn = { bg = "NONE" },
+      }
+    });
+    vim.cmd.colorscheme('gruvbox');
   end
 }

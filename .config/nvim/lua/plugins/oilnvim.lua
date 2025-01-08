@@ -1,5 +1,5 @@
 return {
-  'stevearc/oil.nvim',
+  "stevearc/oil.nvim",
   lazy = false,
   opts = {},
   dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -11,11 +11,11 @@ return {
         "size",
       },
       view_options = {
-        show_hidden = true
-      }
+        show_hidden = true,
+      },
     })
 
-    vim.keymap.set('n', '-', oil.open)
+    vim.keymap.set("n", "-", oil.open)
 
     -- -- HACK: Open preview window after opening oil.
     -- --       https://github.com/stevearc/oil.nvim/issues/339
@@ -31,5 +31,5 @@ return {
     --     oil.open_preview()
     --   end
     -- end)
-  end
+  end,
 }

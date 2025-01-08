@@ -7,8 +7,8 @@ return {
       transparent_mode = false,
       overrides = {
         SignColumn = { bg = "NONE" },
-      }
-    });
-    vim.cmd.colorscheme('gruvbox');
-  end
+      },
+    })
+    vim.cmd.colorscheme("gruvbox")
+  end,
 }

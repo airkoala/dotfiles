@@ -6,6 +6,6 @@ return {
   },
   event = "LspAttach",
   config = function()
-    require('tiny-code-action').setup()
-  end
+    require("tiny-code-action").setup()
+  end,
 }

@@ -45,4 +45,7 @@ return {
     event = "VeryLazy",
     opts = {},
   },
+
+  -- Syntax highlighting for kitty.conf
+  { "fladson/vim-kitty", ft = "kitty" },
 }

@@ -23,7 +23,7 @@ return {
             disconnect = "⏏",
           },
         },
-      }
+      },
     },
 
     -- Installs the debug adapters for you
@@ -45,7 +45,7 @@ return {
           -- Update this to ensure that you have the debuggers for the langs you want
           -- 'delve',
         },
-      }
+      },
     },
 
     -- Add your own debuggers here

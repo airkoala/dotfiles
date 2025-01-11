@@ -4,7 +4,6 @@ local M = {
   opts = {},
 }
 
-
 if vim.env.TERMINAL == "kitty" then
   return M
 else

@@ -1,8 +1,12 @@
+local M = {
+  "3rd/image.nvim",
+  lazy = false,
+  opts = {},
+}
+
+
 if vim.env.TERMINAL == "kitty" then
-  return {
-    "3rd/image.nvim",
-    opts = {},
-  }
+  return M
 else
   return {}
 end

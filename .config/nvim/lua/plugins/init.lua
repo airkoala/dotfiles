@@ -1,6 +1,6 @@
 return {
   -- Allow saving as sudo
-  "lambdalisue/suda.vim",
+  { "lambdalisue/suda.vim", cmd = { "SudaWrite", "SudaRead" } },
 
   -- Git related plugins
   "tpope/vim-fugitive",

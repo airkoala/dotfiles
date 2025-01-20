@@ -29,7 +29,7 @@ function stopwatch(){
 }
 
 # Check if eza is installed or not
-if type "$eza" > /dev/null; then
+if type "$eza" &> /dev/null; then
   alias ls='eza'
   alias ll='ls --long --all --header --git'   # show long listing of all
   alias la='ls --all'   # show listing of all except ".."

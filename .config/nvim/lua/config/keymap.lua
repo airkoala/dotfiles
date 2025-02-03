@@ -8,6 +8,10 @@ vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
+-- System clipboard keymaps
+vim.keymap.set("n", "<leader><Space>", '"+y', { desc = "Yank to system clipboard" })
+vim.keymap.set("n", "<leader><Space>", '"+p', { desc = "Paste from system clipboard" })
+
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnostic message" })
@@ -29,26 +33,26 @@ vim.keymap.set("n", "<C-l>", jump_to_window("l"), { desc = "Jump to right window
 
 -- document existing key chains
 require("which-key").add({
-  { "<leader>c", group = "[C]ode" },
+  { "<leader>c",  group = "[C]ode" },
   { "<leader>c_", hidden = true },
-  { "<leader>d", group = "[D]ocument" },
+  { "<leader>d",  group = "[D]ocument" },
   { "<leader>d_", hidden = true },
-  { "<leader>g", group = "[G]it" },
+  { "<leader>g",  group = "[G]it" },
   { "<leader>g_", hidden = true },
-  { "<leader>h", group = "Git [H]unk" },
+  { "<leader>h",  group = "Git [H]unk" },
   { "<leader>h_", hidden = true },
-  { "<leader>r", group = "[R]ename" },
+  { "<leader>r",  group = "[R]ename" },
   { "<leader>r_", hidden = true },
-  { "<leader>s", group = "[S]earch" },
+  { "<leader>s",  group = "[S]earch" },
   { "<leader>s_", hidden = true },
-  { "<leader>t", group = "[T]oggle" },
+  { "<leader>t",  group = "[T]oggle" },
   { "<leader>t_", hidden = true },
-  { "<leader>w", group = "[W]orkspace" },
+  { "<leader>w",  group = "[W]orkspace" },
   { "<leader>w_", hidden = true },
 })
 -- register which-key VISUAL mode
 -- required for visual <leader>hs (hunk stage) to work
 require("which-key").add({
-  { "<leader>", group = "VISUAL <leader>", mode = "v" },
-  { "<leader>h", desc = "Git [H]unk", mode = "v" },
+  { "<leader>",  group = "VISUAL <leader>", mode = "v" },
+  { "<leader>h", desc = "Git [H]unk",       mode = "v" },
 })

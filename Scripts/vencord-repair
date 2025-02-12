@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+download_url='https://github.com/Vendicated/VencordInstaller/releases/latest/download/VencordInstallerCli-Linux'
+cli_bin=$(mktemp)
+
+wget -O $cli_bin "$download_url"
+chmod +x $cli_bin
+$cli_bin -repair -branch auto
+
+rm --recursive --force $cli_bin

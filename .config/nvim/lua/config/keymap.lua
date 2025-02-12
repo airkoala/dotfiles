@@ -9,8 +9,8 @@ vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = tr
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- System clipboard keymaps
-vim.keymap.set("n", "<leader><Space>", '"+y', { desc = "Yank to system clipboard" })
-vim.keymap.set("n", "<leader><Space>", '"+p', { desc = "Paste from system clipboard" })
+vim.keymap.set("n", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
+vim.keymap.set("n", "<leader>p", '"+p', { desc = "Paste from system clipboard" })
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })

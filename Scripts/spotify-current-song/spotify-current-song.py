@@ -65,5 +65,4 @@ if __name__ == "__main__":
             main()
         except BaseException as e:
             _clear_file(OUTPUT)
-            if e is KeyboardInterrupt:
-                raise e
+            break

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+scriptdir=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
+
+$scriptdir/.venv/bin/python "$scriptdir/spotify-current-song.py"

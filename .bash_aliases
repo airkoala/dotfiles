@@ -29,8 +29,8 @@ function stopwatch(){
 }
 
 # Check if eza is installed or not
-if type "$eza" &> /dev/null; then
-  alias ls='eza'
+if type eza &> /dev/null; then
+  alias ls='eza --follow-symlinks'
   alias ll='ls --long --all --header --git'   # show long listing of all
   alias la='ls --all'   # show listing of all except ".."
   alias lt='ls --tree --level 3'   # show tree listing
@@ -124,4 +124,8 @@ function rmtmp() {
   else
     echo "No tmpdir found"
   fi
+}
+
+function lns() {
+  ln -s $(realpath $1) $(realpath $2)
 }

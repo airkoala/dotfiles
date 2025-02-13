@@ -1,0 +1,17 @@
+@define-color bg       #1d2021;
+@define-color bg-trans rgba(29, 32, 33, 0.8);
+@define-color bg-alt   #665c54;
+@define-color fg       #f9f5d7;
+@define-color red      #cc241d;
+@define-color orange   #d65d0e;
+@define-color green    #98971a;
+@define-color blue     #458588;
+@define-color purple   #b16286;
+@define-color aqua     #689d6a;
+@define-color darkgray #282828;
+
+@define-color primary #fabd2f;
+@define-color border @bg-alt;
+@define-color secondary @aqua;
+@define-color alert @red;
+@define-color disabled #7c6f64;

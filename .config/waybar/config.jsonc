@@ -44,7 +44,6 @@
         }
     },
     "hyprland/submap": {
-        // TODO: Colour
         "format": "<span style=\"italic\">{}</span>"
     },
     "hyprland/window": {

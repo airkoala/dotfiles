@@ -47,6 +47,7 @@ alias sbrc='source ~/.bashrc'
 
 alias sdn='shutdown now'
 alias hib='systemctl hibernate && exit'
+alias sus='systemctl suspend && exit'
 
 # alias sudo='sudo '  # to make aliases work with sudo
 
@@ -129,3 +130,6 @@ function rmtmp() {
 function lns() {
   ln -s $(realpath $1) $(realpath $2)
 }
+
+alias ffmpeg='ffmpeg -hide_banner'
+alias ffprobe='ffprobe -hide_banner'

@@ -133,3 +133,8 @@ function lns() {
 
 alias ffmpeg='ffmpeg -hide_banner'
 alias ffprobe='ffprobe -hide_banner'
+
+function copyfile() {
+  local path=$(realpath "$1")
+  wl-copy -t text/uri-list <<< "file://$path"
+}

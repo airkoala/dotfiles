@@ -68,6 +68,11 @@
         "interval": 1800  // 30 minutes
     },
 
+    "custom/netstatus": {
+        "exec": "~/.config/waybar/scripts/netstatus.sh",
+        "return-type": "json"
+    },
+
     "tray": {
         // "icon-size": 21,
         "spacing": 4

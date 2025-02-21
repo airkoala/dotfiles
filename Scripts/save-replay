@@ -1,0 +1,22 @@
+#!/bin/bash -e
+
+# Define directories for storing clips
+tempdir="$HOME/Videos/Clips/temp"  # Temporary directory where screen recordings are stored
+clipdir="$HOME/Videos/Clips"       # Directory where clips are permanently saved
+
+# Get the application name of the currently focused window
+appname="$(hyprctl clients -j | jq -r '.[] | select(.focusHistoryID == 0) | .class')"
+
+# Create a directory for the application inside the clips folder
+mkdir -p "$clipdir/$appname"
+
+# Signal gpu-screen-recorder to save the current recording
+killall -SIGUSR1 gpu-screen-recorder
+sleep 0.5  # Wait for the recording to be saved
+
+# Find the most recent recording from the temporary directory and move it
+vidname="$(ls -t "$tempdir" | head -n 1)"
+mv "$tempdir/$vidname" "$clipdir/$appname/"
+
+# Send a desktop notification confirming the save operation
+notify-send -t 1500 -u low -- "Replay Saved" "Replay saved to $clipdir/$appname/$vidname"

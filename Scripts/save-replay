@@ -11,11 +11,21 @@ appname="$(hyprctl clients -j | jq -r '.[] | select(.focusHistoryID == 0) | .cla
 mkdir -p "$clipdir/$appname"
 
 # Signal gpu-screen-recorder to save the current recording
-killall -SIGUSR1 gpu-screen-recorder
+if ! killall -SIGUSR1 gpu-screen-recorder; then
+    notify-send -t 2500 -u critical -- "Error" "gpu-screen-recorder is not running"
+    exit 1
+fi
+
 sleep 0.5  # Wait for the recording to be saved
 
 # Find the most recent recording from the temporary directory and move it
 vidname="$(ls -t "$tempdir" | head -n 1)"
+
+if [ -z "$vidname" ]; then
+    notify-send -t 2500 -u normal -- "Error" "No recording found in $tempdir"
+    exit 1
+fi
+
 mv "$tempdir/$vidname" "$clipdir/$appname/"
 
 # Send a desktop notification confirming the save operation

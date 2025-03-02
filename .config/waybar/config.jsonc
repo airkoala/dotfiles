@@ -21,6 +21,7 @@
         "custom/weather",
         "wireplumber",
         "custom/netstatus",
+        "battery",
         "clock",
         "tray"
     ],
@@ -71,6 +72,17 @@
     "custom/netstatus": {
         "exec": "~/.config/waybar/scripts/netstatus.sh",
         "return-type": "json"
+    },
+
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
     },
 
     "tray": {

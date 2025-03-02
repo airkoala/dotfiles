@@ -86,3 +86,11 @@ button:hover {
     -gtk-icon-effect: highlight;
     background-color: @orange;
 }
+
+#battery.charging {
+    color: @primary;
+}
+
+#battery.critical {
+    color: @alert;
+}

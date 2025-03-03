@@ -47,7 +47,7 @@ alias sbrc='source ~/.bashrc'
 
 alias sdn='shutdown now'
 alias hib='systemctl hibernate && exit'
-alias sus='systemctl suspend && exit'
+alias sus='susp && exit'
 
 # alias sudo='sudo '  # to make aliases work with sudo
 

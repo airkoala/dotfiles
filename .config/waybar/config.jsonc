@@ -100,7 +100,7 @@
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
-        "format-muted": " {volume}%",
+        "format-muted": "",
         // "format-bluetooth": "{volume}% {icon} {format_source}",
         // "format-bluetooth-muted": " {icon} {format_source}",
         // "format-source": "{volume}% ",

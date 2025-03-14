@@ -1,4 +1,4 @@
 #!/bin/bash
 scriptdir=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 
-$scriptdir/.venv/bin/python $scriptdir/run.py
+$scriptdir/.venv/bin/python $scriptdir/run.py $@

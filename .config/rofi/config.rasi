@@ -1,0 +1,13 @@
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+element {
+    children: [ element-icon, element-text ];
+}
+
+window {
+    width: 30%;
+}
+
+listview {
+    fixed-height: false;
+}

@@ -2,4 +2,4 @@
 
 hyprlock &
 sleep 1
-systemctl suspend
+systemctl sleep

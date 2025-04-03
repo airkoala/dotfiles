@@ -77,7 +77,8 @@
     "battery": {
         "interval": 60,
         "states": {
-            "warning": 30,
+            "full": 100,
+            "normal": 98,
             "critical": 15
         },
         "format": "{icon} {capacity}%",

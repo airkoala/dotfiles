@@ -87,10 +87,18 @@ button:hover {
     background-color: @orange;
 }
 
+#battery.critical {
+    color: @alert;
+}
+
+#battery.critical #battery.charging {
+    color: @primary;
+}
+
 #battery.charging {
     color: @primary;
 }
 
-#battery.critical {
-    color: @alert;
+#battery.charging.full {
+    color: @secondary;
 }

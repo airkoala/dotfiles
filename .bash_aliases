@@ -138,3 +138,8 @@ function copyfile() {
   local path=$(realpath "$1")
   wl-copy -t text/uri-list <<< "file://$path"
 }
+
+function fork() {
+  nohup "$@" &>/dev/null &
+  disown $!
+}

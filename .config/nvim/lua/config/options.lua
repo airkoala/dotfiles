@@ -19,7 +19,7 @@ vim.wo.relativenumber = true
 vim.o.scrolloff = 2
 
 vim.o.softtabstop = 4
-vim.o.expandtab = true
+vim.o.tabstop = 4
 
 -- Enable mouse mode
 vim.o.mouse = "a"

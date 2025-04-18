@@ -5,7 +5,7 @@ tempdir="$HOME/Videos/Clips/temp"  # Temporary directory where screen recordings
 clipdir="$HOME/Videos/Clips"       # Directory where clips are permanently saved
 
 # Get the application name of the currently focused window
-appname="$(hyprctl clients -j | jq -r '.[] | select(.focusHistoryID == 0) | .class')"
+appname="$(hyprctl clients -j | jq -r '.[] | select(.focusHistoryID == 0) | .initialTitle')"
 
 # Create a directory for the application inside the clips folder
 mkdir -p "$clipdir/$appname"

@@ -30,8 +30,9 @@ function stopwatch(){
 
 # Check if eza is installed or not
 if type eza &> /dev/null; then
-  alias ls='eza --follow-symlinks'
+  alias ls='eza --follow-symlinks --icons'
   alias ll='ls --long --all --header --git'   # show long listing of all
+  alias llm='ll --sort=modified'
   alias la='ls --all'   # show listing of all except ".."
   alias lt='ls --tree --level 3'   # show tree listing
 else
@@ -141,5 +142,5 @@ function copyfile() {
 
 function fork() {
   nohup "$@" &>/dev/null &
-  disown $!
+  disown
 }

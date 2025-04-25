@@ -1,8 +1,8 @@
 @import url("./gruvbox.css");
 
 * {
-    /* `otf-font-awesome` and `ttf-jetbrains-mono-nerd` required */
-    font-family: "JetBrainsMono NFP", NotoSansBengali, FontAwesome;
+    /* `otf-font-awesome` and `otf-monaspace-nerd` required */
+    font-family: "MonaspiceAr NFP", NotoSansBengali, FontAwesome;
     font-size: 13px;
     color: @fg;
 }

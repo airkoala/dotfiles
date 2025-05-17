@@ -144,3 +144,7 @@ function fork() {
   nohup "$@" &>/dev/null &
   disown
 }
+
+
+alias sc='systemctl'
+alias scu='systemctl --user'

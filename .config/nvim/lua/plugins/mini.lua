@@ -8,22 +8,22 @@ return {
     require("mini.surround").setup()
     require("mini.splitjoin").setup()
     require("mini.pairs").setup()
-    require("mini.files").setup({
-      windows = {
-        preview = true,
-        width_preview = 50,
-      },
-      mappings = {
-        go_in = "<ENTER>",
-        go_in_plus = "",
-        go_out = "-",
-        go_out_plus = "",
-      },
-    })
 
-    -- Open mini.files at current file's directory with "-"
-    vim.keymap.set("n", "-", function()
-      MiniFiles.open(vim.api.nvim_buf_get_name(0))
-    end, { noremap = true, silent = true })
+    -- require("mini.files").setup({
+    --   windows = {
+    --     preview = true,
+    --     width_preview = 50,
+    --   },
+    --   mappings = {
+    --     go_in = "<ENTER>",
+    --     go_in_plus = "",
+    --     go_out = "-",
+    --     go_out_plus = "",
+    --   },
+    -- })
+    -- -- Open mini.files at current file's directory with "-"
+    -- vim.keymap.set("n", "-", function()
+    --   MiniFiles.open(vim.api.nvim_buf_get_name(0))
+    -- end, { noremap = true, silent = true })
   end,
 }

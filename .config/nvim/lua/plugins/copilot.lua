@@ -3,5 +3,15 @@ return {
   dependencies = {
     { "AndreM222/copilot-lualine" },
   },
-  opts = true,
+  cmd = "Copilot",
+  event = "InsertEnter",
+  opts = {
+    server_opts_overrides = {
+      settings = {
+        telemetry = {
+          telemetryLevel = "off",
+        },
+      },
+    },
+  },
 }

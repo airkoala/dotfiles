@@ -1,11 +1,15 @@
 -- lazy.nvim
 return {
   "folke/snacks.nvim",
-  ---@type snacks.Config
+  lazy = false,
+
   opts = {
     image = {},
     picker = {},
     terminal = {},
+    indent = {
+      animate = { duration = { step = 5, total = 100 } },
+    },
   },
   keys = {
     -- Search and navigation

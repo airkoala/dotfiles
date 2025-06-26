@@ -1,4 +1,4 @@
--- "gc" to comment visual regions/lines
+-- Adds extra features to to comment visual regions/lines
 return {
   "numToStr/Comment.nvim",
   event = "LspAttach",

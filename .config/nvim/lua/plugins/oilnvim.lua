@@ -7,8 +7,9 @@ return {
     local oil = require("oil")
     oil.setup({
       columns = {
-        "icon",
+        "permissions",
         "size",
+        { "icon", add_padding = false },
       },
       keymaps = {
         ["<C-p>"] = { "actions.preview", opts = { split = "belowright" } },

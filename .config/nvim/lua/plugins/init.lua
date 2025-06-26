@@ -12,20 +12,12 @@ return {
   -- Useful plugin to show you pending keybinds.
   { "folke/which-key.nvim", opts = {} },
 
-  -- {
-  --   -- Add indentation guides even on blank lines
-  --   "lukas-reineke/indent-blankline.nvim",
-  --   -- Enable `lukas-reineke/indent-blankline.nvim`
-  --   -- See `:help ibl`
-  --   main = "ibl",
-  --   opts = {},
-  -- },
-
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
+
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -34,9 +26,8 @@ return {
 
   {
     "norcalli/nvim-colorizer.lua",
-    init = function()
-      require("colorizer").setup()
-    end,
+    lazy = false,
+    opts = {},
   },
 
   {

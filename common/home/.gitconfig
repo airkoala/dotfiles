@@ -1,0 +1,7 @@
+[user]
+	email = airkoala1@gmail.com
+	name = AirKoala
+[init]
+	defaultBranch = master
+[alias]
+	slog = log --pretty=format:\"%h %s %C(yellow)(%cs)\"

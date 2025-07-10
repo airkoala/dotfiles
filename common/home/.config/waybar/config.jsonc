@@ -107,6 +107,6 @@
         // "format-source": "{volume}% ",
         // "format-source-muted": "",
         "format-icons": ["", "", "", "", "", ""],
-        "on-click": "pavucontrol"
+        "on-click": "pwvucontrol"
     }
 }

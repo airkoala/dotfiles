@@ -44,9 +44,12 @@ function connection_names {
 
 # echo "$load_icon"
 while true; do
-  echo "{
-          \"text\": \"$(connection_type)$(status)\",
-          \"tooltip\": \"$(connection_names)\"
-        }" | jq --unbuffered --compact-output
+  # Only show status if its not ok
+  if [[ "$(status)" != "$ok_icon" ]]; then
+    echo "{
+            \"text\": \"$(connection_type)$(status)\",
+            \"tooltip\": \"$(connection_names)\"
+          }" | jq --unbuffered --compact-output
+  fi
   sleep $ival
 done

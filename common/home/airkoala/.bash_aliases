@@ -148,3 +148,5 @@ function fork() {
 
 alias sc='systemctl'
 alias scu='systemctl --user'
+
+alias bctl='bluetoothctl'

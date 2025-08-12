@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SESSION='simplex-chat'
+
+if tmux has-session -t "$SESSION"; then
+    tmux kill-session -t "$SESSION"
+fi
+
+tmux new-session -d -c "$HOME" -s "$SESSION" -n 'simplex-chat' -y 30 -x 119 'simplex-chat'
+exit 0

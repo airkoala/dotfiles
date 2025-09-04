@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo stow --override=.* -t / common
+sudo stow --override=.* -t / $HOSTNAME

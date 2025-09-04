@@ -1,7 +1,15 @@
 return {
   "HakonHarnes/img-clip.nvim",
   event = "VeryLazy",
-  opts = {},
+  opts = {
+    filetypes = {
+
+      typst = {
+        template = 'image("$FILE_PATH"),',
+      },
+
+    }
+  },
   keys = {
     { "<leader>p", function()
       if not require("img-clip").paste_image({ show_dir_path_in_prompt = true }) then

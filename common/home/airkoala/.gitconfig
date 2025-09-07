@@ -3,5 +3,7 @@
 	name = AirKoala
 [init]
 	defaultBranch = master
+[push]
+	followTags = true
 [alias]
 	slog = log --pretty=format:\"%h %s %C(yellow)(%cs)\"

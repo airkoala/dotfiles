@@ -5,7 +5,7 @@ return {
     filetypes = {
 
       typst = {
-        template = 'image("$FILE_PATH"),',
+        template = '#image("$FILE_PATH")',
       },
 
     }

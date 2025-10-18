@@ -2,7 +2,7 @@
 
 * {
     /* `otf-font-awesome` and `otf-monaspace-nerd` required */
-    font-family: "MonaspiceAr NFP", NotoSansBengali, FontAwesome;
+    font-family: "Monaspace Argon", NotoSansBengali, FontAwesome;
     font-size: 13px;
     color: @fg;
 }
